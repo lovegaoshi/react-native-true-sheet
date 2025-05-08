@@ -322,6 +322,5 @@ export class TrueSheet extends PureComponent<TrueSheetProps, TrueSheetState> {
 const $nativeSheet: ViewStyle = {
   position: 'absolute',
   width: '100%',
-  left: -9999,
   zIndex: -9999,
 }
