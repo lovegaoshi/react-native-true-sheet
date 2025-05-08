@@ -160,6 +160,10 @@ class TrueSheetView(context: Context) :
       )
     }
   }
+  
+  fun setDraggingEnabled (drag: Boolean) {
+    sheetDialog.behavior.isDraggable = drag
+  }
 
   override fun dispatchProvideStructure(structure: ViewStructure) {
     rootSheetView.dispatchProvideStructure(structure)

@@ -248,6 +248,7 @@ export class TrueSheet extends PureComponent<TrueSheetProps, TrueSheetState> {
       dimmed = true,
       initialIndexAnimated = true,
       edgeToEdge = false,
+      draggingEnabled = true,
       keyboardMode = 'resize',
       initialIndex,
       dimmedIndex,
@@ -290,6 +291,7 @@ export class TrueSheet extends PureComponent<TrueSheetProps, TrueSheetState> {
         onDragChange={this.onDragChange}
         onDragEnd={this.onDragEnd}
         onContainerSizeChange={this.onContainerSizeChange}
+        draggingEnabled={draggingEnabled}
       >
         <View
           collapsable={false}

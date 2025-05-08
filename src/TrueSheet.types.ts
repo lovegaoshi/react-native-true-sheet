@@ -249,6 +249,13 @@ export interface TrueSheetProps extends ViewProps {
    * @platform android
    */
   edgeToEdge?: boolean
+  
+  /**
+   * enable/disable sheet dragging on android.
+   *
+   * @platform android
+   */
+  draggingEnabled?: boolean
 
   /**
    * This is called when the sheet is ready to present.

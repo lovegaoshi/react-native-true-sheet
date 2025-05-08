@@ -52,6 +52,11 @@ class TrueSheetViewManager : ViewGroupManager<TrueSheetView>() {
     view.setEdgeToEdge(edgeToEdge)
   }
 
+  @ReactProp(name = "draggingEnabled")
+  fun setDraggingEnabled(view: TrueSheetView, draggingEnabled: Boolean) {
+    view.setDraggingEnabled(draggingEnabled)
+  }
+
   @ReactProp(name = "maxHeight")
   fun setMaxHeight(view: TrueSheetView, height: Double) {
     view.setMaxHeight(Utils.toPixel(height).toInt())
