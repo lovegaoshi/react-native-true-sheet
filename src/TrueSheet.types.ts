@@ -119,6 +119,12 @@ export interface TrueSheetProps extends ViewProps {
    * ```
    */
   name?: string
+
+  /**
+   * spreads into $nativeSheet. used to offset peer compoenent height/width. 
+   * use top and left only.
+   */
+  positionOffset?: ViewStyle
   /**
    * The sizes you want the Sheet to support.
    * Maximum of 3 sizes only; collapsed, half-expanded, expanded.

@@ -243,6 +243,7 @@ export class TrueSheet extends PureComponent<TrueSheetProps, TrueSheetState> {
     const {
       sizes = ['medium', 'large'],
       backgroundColor = 'white',
+      positionOffset = {},
       dismissible = true,
       grabber = true,
       dimmed = true,
@@ -266,7 +267,7 @@ export class TrueSheet extends PureComponent<TrueSheetProps, TrueSheetState> {
     return (
       <TrueSheetNativeView
         ref={this.ref}
-        style={$nativeSheet}
+        style={{...$nativeSheet, ...positionOffset}}
         scrollableHandle={this.state.scrollableHandle}
         sizes={sizes}
         blurTint={blurTint}
