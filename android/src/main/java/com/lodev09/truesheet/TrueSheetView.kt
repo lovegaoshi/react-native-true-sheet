@@ -165,6 +165,10 @@ class TrueSheetView(context: Context) :
     sheetDialog.behavior.isDraggable = drag
   }
 
+  fun setDismissWithAnimation (drag: Boolean) {
+    sheetDialog.dismissWithAnimation = drag
+  }
+
   override fun dispatchProvideStructure(structure: ViewStructure) {
     rootSheetView.dispatchProvideStructure(structure)
   }

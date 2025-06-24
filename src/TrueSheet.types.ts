@@ -263,6 +263,15 @@ export interface TrueSheetProps extends ViewProps {
    */
   draggingEnabled?: boolean
 
+  
+  /**
+   * https://developer.android.com/reference/com/google/android/material/bottomsheet/BottomSheetDialog#getDismissWithAnimation()
+   * 
+   * if dismissing will perform the swipe down animation on the bottom sheet, rather than the window animation for the dialog
+   * @platform android
+   */
+  dismissWithAnimation?: boolean
+
   /**
    * This is called when the sheet is ready to present.
    */

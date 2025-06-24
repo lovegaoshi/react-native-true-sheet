@@ -57,6 +57,11 @@ class TrueSheetViewManager : ViewGroupManager<TrueSheetView>() {
     view.setDraggingEnabled(draggingEnabled)
   }
 
+  @ReactProp(name = "dismissWithAnimation")
+  fun setDismissWithAnimation(view: TrueSheetView, dismissWithAnimation: Boolean) {
+    view.setDdismissWithAnimation(dismissWithAnimation)
+  }
+
   @ReactProp(name = "maxHeight")
   fun setMaxHeight(view: TrueSheetView, height: Double) {
     view.setMaxHeight(Utils.toPixel(height).toInt())
