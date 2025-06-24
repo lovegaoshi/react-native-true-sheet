@@ -59,7 +59,7 @@ class TrueSheetViewManager : ViewGroupManager<TrueSheetView>() {
 
   @ReactProp(name = "dismissWithAnimation")
   fun setDismissWithAnimation(view: TrueSheetView, dismissWithAnimation: Boolean) {
-    view.setDdismissWithAnimation(dismissWithAnimation)
+    view.setDismissWithAnimation(dismissWithAnimation)
   }
 
   @ReactProp(name = "maxHeight")
